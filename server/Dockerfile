@@ -74,7 +74,6 @@ RUN sed -i 's/\r$//' /usr/local/bin/docker-entrypoint.sh \
  && chmod 0755 /usr/local/bin/docker-entrypoint.sh
 
 EXPOSE 5888
-VOLUME ["/data"]
 
 # The healthcheck hits the unauthenticated endpoint so an orchestrator can tell
 # "server up but library unreadable" from "server down".
